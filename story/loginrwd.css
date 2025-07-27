@@ -1,0 +1,112 @@
+@media(max-width:1200px){
+    .h1-md{
+    font-size: 40px;
+    }
+    .h5-md{
+    font-size: 20px;
+    }
+}
+@media(max-width:1100px){
+    .h2-md{
+    font-size: 34px;
+    }
+    .h6-md{
+    font-size: 18px;
+    }
+}
+@media(max-width:1000px){
+    .h3-md{
+    font-size: 28px;
+    }
+    .text-md{
+    font-size: 16px;
+    }
+    .col-md-12{
+        padding-right: 12px;
+        padding-left: 12px;
+        width: 100%;
+    }
+    .bannersm-img{
+        
+    }
+    .loginpic{
+        position: relative;
+    }
+    .loginword{
+        position:absolute;  /****/
+        top: 80px;
+        left: 50px;
+        width: 80%;
+    }
+    .btm-word{
+        position:absolute;
+        left: 50px;
+    }
+}
+
+@media(max-width:767px){
+    .py-md-13{
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    .py-md-32{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .display-md-none{
+        display: none;
+    }
+    .loginword{
+        position:absolute;  /****/
+        top: 30px;
+        left: 50px;
+        width: 80%;
+    }
+    .btm-word{
+        position:absolute;
+        left: 0;
+    }
+}
+@media(max-width:600px){
+    .loginpic{
+        position: relative;
+    }
+    .loginword{
+        position:absolute;  /****/
+        top: 20px;
+        left: 50px;
+        width: 80%;
+    }
+    .btm-word{
+        position:absolute;
+        left: 0;
+    }
+    .text-smm{
+        font-size: 12px;
+    }
+}
+@media(max-width:400px){
+    .loginpic{
+        position: relative;
+    }
+    .loginword{
+        position:absolute;  /****/
+        top: 10px;
+        left: 50px;
+        width: 80%;
+        display: flex;
+    }
+    .btm-word{
+        position:absolute;
+        left: 80px;
+    }
+    .text-smm{
+        font-size: 12px;
+    }
+}
+@media(max-width:300px){
+    .display-sm-none{
+        display: none;
+    }
+    
+}
