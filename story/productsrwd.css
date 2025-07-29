@@ -1,0 +1,21 @@
+@media(max-width:767px){
+    .display-md-none{
+        display: none;
+    }
+    .mb-md-16{
+        margin-bottom: 16px;
+    }
+    .mb-md-12{
+        margin-bottom: 12px;
+    }
+    .text-md-sm{
+    font-size: 14px;
+    }
+    .h4-md{
+        font-size: 24px;
+    }
+    .my-md-12{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
