@@ -51,7 +51,7 @@ table {
 }
 
 .container{
-    max-width:856px;
+    max-width:1296px;
     margin: 0 auto;
 }
 .header{
@@ -64,12 +64,9 @@ table {
     padding: 152px 0;
     max-width: 100%;
 }
-.brand-img{
-    width: 1076px;
-    margin-right: -110px;
-    margin-left: -110px;
+img{
+    max-width: 100%;
 }
-
 /* 通用顏色 */
 :root{
     --neutral-100:#F8F9FA;
@@ -79,6 +76,7 @@ table {
     --neutral-white:#FFFFFF;
     --primary-100:#F5FEE7;
     --primary-200:#E8FEC5;
+    --primary-300:#C0FA73;
     --primary-400:#57A203;
 }
 body{
@@ -108,6 +106,9 @@ a{
 .bg-primary-200{
     background-color: var(--primary-200);
 }
+.bg-primary-300{
+    background-color: var(--primary-300);
+}
 .bg-neutral-100{
    background-color: var(--neutral-100);
 }
@@ -119,24 +120,25 @@ h1{
     line-height: 1.2;
     letter-spacing: 0.05rem;
 }
-h3{
+.h3{
     font-size: 28px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.05rem;
 }
-h4{
+.h4{
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.05rem;
 }
-h5{
+.h5{
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.05rem;
 }
+
 .text-md-500{
     font-size: 16px;
     font-weight: 500;
@@ -180,9 +182,9 @@ h5{
 /* col */
 .row{
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -24px;
-    margin-left: -24px;
+    flex-wrap: wrap; 
+    margin-right: -12px;
+    margin-left: -12px;
 }
 .col-1{
     padding-right: 24px;
@@ -190,9 +192,9 @@ h5{
     width: calc(100%/12);
 }
 .col-2{
-    padding-right: 24px;
-    padding-left: 24px;
-    width: calc(100%/12*2);
+   width: calc(100%/12*2);
+   padding-left: 12px;
+   padding-right: 12px;
 }
 .col-3{
     padding-right: 24px;
@@ -200,8 +202,8 @@ h5{
     width: calc(100%/12*3);
 }
 .col-4{
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 12px;
+   padding-right: 12px;
     width: calc(100%/12*4);
 }
 .col-5{
@@ -229,8 +231,8 @@ h5{
     width: calc(100%/12*9);
 }
 .col-10{
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 12px;
+   padding-right: 12px;
     width: calc(100%/12*10);
 }
 .col-11{
@@ -245,17 +247,28 @@ h5{
 }
 
 /* m左右推 */
+.me-8{
+    margin-right: 8px;
+}
+.me-12{
+    margin-right: 12px;
+}
+.me-24{
+    margin-right: 24px;
+}
 .me-48{
     margin-right: 48px;
 }
 .me-40{
     margin-right: 40px;
 }
-.me-110{
-    margin-right: -110px;
-    margin-left: -110px;
-}
 /* m上下推 */
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
 .mb-16{
     margin-bottom: 16px;
 }
@@ -279,7 +292,23 @@ h5{
     margin-top: 16px;
     margin-bottom: 16px;
 }
+.mx-12{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 /* p推 */
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.p8-15{
+    padding: 8px 15px;
+}
+.py-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .px-32{
     padding: 32px;
 }
@@ -291,6 +320,10 @@ h5{
     padding-top: 12px;
     padding-bottom: 12px;
 }
+.pt-32{
+    padding-top: 32px;
+}
+
 /* breadcrumb */
 .breadcrumb-item + .breadcrumb-item::before{
     content: '/';
@@ -312,4 +345,55 @@ h5{
 /* product-list */
 .product-list a:hover{
     color: var(--primary-400);
+}
+@media(min-width:767px){
+    .product-last{
+        display: none;
+    }
+}
+.pagination{
+    justify-content: center;  
+}
+.btn{
+    border-radius: 0;
+    padding: 8px 16px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+    border: none;
+    cursor: pointer; 
+}
+.btn-active{
+    font-weight: 500;
+    background-color: var(--primary-300);
+}
+.btn:hover{
+    font-weight: 500;
+    background-color: var(--primary-300);
+}
+.btn-light{
+    border: 1px solid var(--neutral-900);
+	background-color: var(--neutral-white);
+	color: var(--neutral-900);
+}
+
+.btn-discount{
+    color: var(--neutral-white);
+}
+.btn-dark{
+    padding: 12px 24px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+    border: none;
+    cursor: pointer; 
+    border-radius: 4px;
+    color: var(--neutral-white);
+	background-color: var(--neutral-900);
+}
+.copyright{
+    text-align: center;
+}
+.section-lined{
+    border-top: 1px solid var(--neutral-300);
 }

@@ -49,7 +49,10 @@ table {
 *,*::before,*::after{
     box-sizing:border-box;
 }
-
+.container-nav{
+    max-width: 1296px;
+    margin: 0 auto;
+}
 .container{
     max-width:856px;
     margin: 0 auto;
