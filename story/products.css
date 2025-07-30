@@ -397,3 +397,60 @@ h1{
 .section-lined{
     border-top: 1px solid var(--neutral-300);
 }
+@media(max-width:767px){
+    .display-md-none{
+        display: none;
+    }
+    .mb-md-32{
+        margin-bottom: 32px;
+    }
+    .mb-md-24{
+        margin-bottom: 24px;
+    }
+    .mb-md-16{
+        margin-bottom: 16px;
+    }
+    .mb-md-12{
+        margin-bottom: 12px;
+    }
+    .text-md-sm{
+    font-size: 14px;
+    }
+    .h4-md{
+        font-size: 24px;
+    }
+    .h5-md{
+        font-size: 20px;
+    }
+    .my-md-12{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .row-md{
+    
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+    }
+    .col-md-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    }
+    .col-md-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/4*2);
+    }
+    .footer-md{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .footer-md ul{
+       flex-direction: column;
+    }
+    .pl-md-12{
+        padding-left: 12px;
+    }
+}
