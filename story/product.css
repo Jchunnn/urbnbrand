@@ -541,5 +541,19 @@ h1{
         padding-top: 12px;
         padding-bottom: 12px;
     }
+    .recommend{
+        overflow-x: auto;
+    }
+    .row-md {
+    flex-wrap: nowrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    }
+   .col-md {
+    width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+
 
 }
