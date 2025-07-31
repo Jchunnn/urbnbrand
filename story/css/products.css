@@ -64,17 +64,6 @@ table {
     padding: 152px 0;
     max-width: 100%;
 }
-.price p{
-    text-decoration: line-through;
-}
-.product-color{
-	width: 64px;
-	text-align: center;
-	color: var(--neutral-600);
-}
-.gap-8{
-    gap: 8px;
-}
 img{
     max-width: 100%;
 }
@@ -82,7 +71,6 @@ img{
 :root{
     --neutral-100:#F8F9FA;
     --neutral-300:#DEE2E6;
-    --neutral-500:#ADB5BD;
     --neutral-600:#6C757D;
     --neutral-900:#212529;
     --neutral-white:#FFFFFF;
@@ -90,7 +78,6 @@ img{
     --primary-200:#E8FEC5;
     --primary-300:#C0FA73;
     --primary-400:#57A203;
-    --danger-300:#D74F4F;
 }
 body{
     font-family: "Noto Sans TC",sans-serif;
@@ -98,14 +85,10 @@ body{
     font-weight: 700;
     color: var(--neutral-900);
     overflow-x: hidden;
-    outline: 2px dashed red;
 }
 a{
     text-decoration: none;
     color: var(--neutral-900);
-}
-.neutral-500{
-    color: var(--neutral-500);
 }
 .neutral-600{
     color: var(--neutral-600);
@@ -115,9 +98,6 @@ a{
 }
 .primary-400{
     color: var(--primary-400);
-}
-.danger-300{
-    color: var(--danger-300);
 }
 .bg-primary-100{
     background-color: var(--primary-100);
@@ -282,14 +262,8 @@ h1{
     margin-right: 40px;
 }
 /* m上下推 */
-.mt-48{
-    margin-top: 48px;
-}
 .mb-4{
     margin-bottom: 4px;
-}
-.mb-8{
-    margin-bottom: 8px;
 }
 .mb-12{
     margin-bottom: 12px;
@@ -309,13 +283,9 @@ h1{
 .mb-64{
     margin-bottom: 64px;    
 }
-.my-48{
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-.my-335{
-    margin-top: 33.5px;
-    margin-bottom: 33.5px;
+.my-24{
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .my-16{
     margin-top: 16px;
@@ -327,18 +297,9 @@ h1{
 }
 
 /* p推 */
-.p12-24{
-    padding: 12px 24px;
-}
 .py-10{
     padding-top: 10px;
     padding-bottom: 10px;
-}
-.pt-64{
-    padding-top: 64px;
-}
-.pb-64{
-    padding-bottom: 64px;
 }
 .p8-15{
     padding: 8px 15px;
@@ -361,7 +322,6 @@ h1{
 .pt-32{
     padding-top: 32px;
 }
-
 
 /* breadcrumb */
 .breadcrumb-item + .breadcrumb-item::before{
@@ -389,52 +349,34 @@ h1{
     .product-last{
         display: none;
     }
-    .bi-heart-md{
-        display: none;
-    }
 }
 .pagination{
     justify-content: center;  
 }
 .btn{
-	border-radius: 4px;
-	padding: 12px 24px;
+    border-radius: 0;
+    padding: 8px 16px;
 	font-size: 16px;
 	line-height: 1.5;
-	font-weight: 500;
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
+	font-weight: 400;
+    border: none;
+    cursor: pointer; 
 }
-
-/* btn-product */
-.btn-product-size{
-	border: 1px solid var(--neutral-300);
-	width: 160px;
+.btn-active{
+    font-weight: 500;
+    background-color: var(--primary-300);
 }
-.btn-product-size.active,
-.btn-product-size:hover{
-	border-color: var(--neutral-900);
-}
-.btn-product-size.disabled{
-    border: 1px solid var(--neutral-300);
-}
-/* like shopcart */
-.product-action{
-    display: flex;
-    gap: 8px;
-}
-.product-action .btn{
-    width: 50%;
+.btn:hover{
+    font-weight: 500;
+    background-color: var(--primary-300);
 }
 .btn-light{
-    border-radius: 4px;
     border: 1px solid var(--neutral-900);
 	background-color: var(--neutral-white);
 	color: var(--neutral-900);
 }
-.btn-light:hover{
-    background-color: var(--neutral-900);
+
+.btn-discount{
     color: var(--neutral-white);
 }
 .btn-dark{
@@ -448,33 +390,11 @@ h1{
     color: var(--neutral-white);
 	background-color: var(--neutral-900);
 }
-.btn-dark:hover{
-    background-color: var(--neutral-white);
-    color: var(--neutral-900);
-    border: 1px solid var(--neutral-900);
-}
-.bi{
-    padding-right: 8px;
-}
-.btn-md{
-    border: none;
-    background-color: transparent;
-}
-/* Discount */
-.btn-discount{
-    background-color: var(--neutral-900);
-    color: var(--neutral-white);
-    border-radius: 4px;
-}
-
 .copyright{
     text-align: center;
 }
-.section-lined-top{
-    border-top: 1px solid var(--neutral-300);
-}
 .section-lined{
-    border-bottom: 1px solid var(--neutral-300);
+    border-top: 1px solid var(--neutral-300);
 }
 @media(max-width:767px){
     .display-md-none{
@@ -501,14 +421,12 @@ h1{
     .h5-md{
         font-size: 20px;
     }
-    .h6-md{
-        font-size: 16px;
-    }
     .my-md-12{
         margin-top: 12px;
         margin-bottom: 12px;
     }
     .row-md{
+    
     flex-wrap: wrap;
     margin-right: -12px;
     margin-left: -12px;
@@ -534,26 +452,4 @@ h1{
     .pl-md-12{
         padding-left: 12px;
     }
-    .p8-16-md{
-        padding: 8px 16px;
-    }
-    .py-md-12{
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-    .recommend{
-        overflow-x: auto;
-    }
-    .row-md {
-    flex-wrap: nowrap;
-    margin-left: -8px;
-    margin-right: -8px;
-    }
-   .col-md {
-    width: 316px;
-    padding-left: 8px;
-    padding-right: 8px;
-    }
-
-
 }
